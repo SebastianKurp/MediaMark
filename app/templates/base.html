@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    {% if title %}
+    <title>{{ title }} - MediaMark</title>
+    {% else %}
+    <title>Welcome to MediaMark</title>
+    {% endif %}
+
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    
+    <div classs="top">
+        <img id="wandicon" style="max-height: 50px; max-width: 50px" src= "../static/img/magic-wand-hand-drawn-tool.svg"/>
+        <div class="mediamark">MediaMark</div> 
+        <div class="searchicon">
+          <img style="max-height: 40px; max-width: 40px; min-height: 40px; min-width: 40px; margin-top: 30px; margin-right: 10px" src="../static/img/search.svg"/>
+        </div>
+        <div class="searchbox">
+          <div class="searchbarcontainer"
+            <input class="searchinput searchbar" type="text">
+          </div>
+        </div>
+        </div>
+        <div class="maincontent">
+        <div class="sidebar">
+          <div class="audiovideo">
+            <div class="audio">
+              <a style="line-height: 50px" href="/audio"> Audio</a>
+            </div>
+            <div class="video">
+              <a style="line-height: 50px" href="/video"> Video</a>
+            </div>
+            </div>
+          </div>
+          <div class="notes">
+            <div class="upload">
+              <input type="file" id="input" class="choosefile">
+          </div>
+        </div>
+        <div class="media">
+          <audio id="sound" >
+        </div>
+        </div>
+
+    {% block content %}{% endblock %}
+
+    <div class="end">
+        <div class="github">
+            <a style="font-size: 4em" href="https://github.com/mgibbons2/mediamark" target="_blank"> Github</a>
+        </div>
+    </div>
+</body>
+
+</html>

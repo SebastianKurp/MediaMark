@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <h2>New Comment Form</h2>
+    <form action="" method="post" name="comment" class="new-comment-form" >
+        {{ form.hidden_tag() }}
+
+        <p>Title: {{ form.title(size=20) }}</p>
+        
+        <p>Author: {{ form.author(size=20) }}</p>
+        
+        <p>Mentions: {{ form.mentions(size=20) }}
+        </p>
+        
+        <p>Quote from clip: {{ form.quote(size=60) }}
+        </p>
+        
+        <p>Comment:</br>
+            {{ form.note(size=100) }}</p>
+        
+        <p><input type="submit" value="Add Comment"/></p>
+    </form>
+</div>
+{% endblock %}

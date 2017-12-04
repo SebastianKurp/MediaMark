@@ -1,0 +1,34 @@
+body {
+    background: #616163;
+}
+
+table, td {
+    border: 1px solid #616163;
+}
+
+h3 {
+    margin: auto;
+    margin-bottom: .4em;
+    text-align: center;
+    font-family: "helvetic-light";
+    font-size: 2em;
+    color: white;
+}
+
+th {
+    background-color: #80ced7;
+    color: white;
+}
+
+td {
+    background-color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+    color: white;
+}

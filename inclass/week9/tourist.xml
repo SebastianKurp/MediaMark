@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="tourist-style.xsl"?>
+<tourist_sites>
+    <site>
+        <name>Colosseum</name>
+        <location>Rome</location>
+        <age units="years">1945</age>
+        <img src="http://www.history.com/s3static/video-thumbnails/AETN-History_Prod/24/223/History_Romes_Great_Stadium_SF_still_624x352.jpg"/>
+        <description>A giant amphitheater designed to host Roman events such as games, races, gladiators, etc.</description>
+        <architect>Commissioned by Emperor Vespasian</architect>
+        <notes>
+            <note>We have never been.</note>
+            <note>Officially opened as Flavian Amphitheater</note>
+        </notes>
+    </site>
+    <site>
+        <name>Forum</name>
+        <location>Sicily</location>
+        <age units="years">1900</age>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPEUh4q6I8Rfdznfw6TPKLgP-KJ-7UtkRSwDBDInOS120jG19HQ"/>
+        <description>A giant forum designed to host Roman events such as games, races, gladiators, etc.</description>
+        <architect>Commissioned by Emperor Nero</architect>
+        <notes>
+            <note>We have been.</note>
+            <note>Officially opened as forum</note>
+        </notes>
+    </site>
+</tourist_sites>

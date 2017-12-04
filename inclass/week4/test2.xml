@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<play>
+    <page number="198">
+        <title>
+        </title>
+        <stage-direction>
+            Here Mr. Carmichael, who was reading Virgil, blew out his candle.
+        </stage-direction>
+        <scene justify="center">3</scene>
+        <body>
+            <p>
+                ...<highlight color="green">green</highlight>...
+            </p>
+            <p>
+                ...<bold>the hard erect</bold>...
+            </p>
+        </body>
+    <page/>
+</play>

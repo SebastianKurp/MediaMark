@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<TEI>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>To The Lighthouse</title>
+                <author>Virginia Woolf</author>
+				<respStmt>
+					<resp>Encoded by</resp>
+					<name>Nieky</name>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<ps>Published by Leonard and Virginia Woolf</ps>
+                <publisher>The Hogarth Press</publisher>
+                <location>52 Tavistock Square, London, W.V. 1927</location>
+			</publicationStmt>
+			<sourceDesc>
+				<edition>British 1st Edition</edition>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<front>
+            
+        </front>
+        <p xml:lang="en" n="7">
+            <q/>Good-evening, 
+            <name type="person">
+            <choice>
+            <abbr type="title">Mrs.</abbr>
+            <expan>Misses</expan>
+            </choice> McNab,</name></q> she would say. She had a pleasant way with her. The girls all liked her. But dear, many things had changed since then (she shut the drawer); many families had lost their dearest. So she was dead; and 
+            <name>
+            <choice>
+            <abbr type="title">Mr.</abbr>
+            <expan>Mister</expan>
+            </choice>
+            </name> Andrew killed; and 
+            <name>
+            <choice>
+            <abbr type="title">Dr.</abbr>
+            <expan>Doctor</expan>
+            </choice>
+            </name> Prue dead too, they said, with her first baby; but everyone had lost some one these years. Prices had gone up shamefully, and didn't come down again neither. She could well remember her in her grey cloak.
+        </p>
+	</text>
+</TEI>

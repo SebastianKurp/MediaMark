@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<TEI>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>20,000 Leagues Under the Sea</title>
+                <author>Captain Nemo</author>
+				<respStmt>
+					<resp>Encoded by</resp>
+					<name>Nieky</name>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<ps>Published by Leonard and Virginia Woolf</ps>
+                <publisher>The Hogarth Press</publisher>
+                <location>52 Tavistock Square, London, W.V. 1927</location>
+			</publicationStmt>
+			<sourceDesc>
+				<edition>British 1st Edition</edition>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<distance>
+            <measure units="leagues">20,000</measure>
+            <measure units="nautical miles">60000</measure>
+            <measure units="English miles">70000</measure>
+        </distance>
+	</text>
+</TEI>

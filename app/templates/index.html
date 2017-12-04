@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Current file: {{ name }}</p>
+<div class="clips">
+    <h3>Comments</h3>
+    <div class="wrapper" id="nodelist" >
+        {% for comment in comments %}
+        <div class="exampleclip" >
+            <h4>{{ comment.find('title').text }}</h4>
+            <p>{{ comment.find('author').text }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <a href="/new-comment">Add New Comment</a>
+    <a href={{ downloadPath }} download target="blank" >download comments</a>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="image.xsl"?>
+<painting>
+    <title>Arnolfini Portrait</title>
+    <artist>Jan van Eyck</artist>
+    <date></date>
+    <size height="2.75" width="2" />
+    <origin>Netherlands</origin>
+    <location>London</location>
+    <subjects>
+        <subject>Giovanni di Nicolao Arnolfini</subject>
+        <subject>Costanza Trenta</subject>
+    </subjects>
+    <setting>Bruges</setting>
+    <movement>Realism</movement>
+    <orientation>Portrait</orienteation>
+    <scope>full-length double</scope>
+    <perspective>geometric orthogonal</perspective>
+    <descriptions>
+        <descriptor>The Arnolfini Portrait (or The Arnolfini Wedding, The Arnolfini Marriage, the Portrait of Giovanni Arnolfini and his Wife, or other titles) is a 1434 oil painting on oak panel by the Early Netherlandish painter Jan van Eyck. It forms a full-length double portrait, believed to depict the Italian merchant Giovanni di Nicolao Arnolfini and his wife, presumably in their home in the Flemish city of Bruges.</descriptor>
+    </descriptions>
+</painting>
