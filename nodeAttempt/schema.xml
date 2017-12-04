@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="media.xsl"?>
+<directory>
+    <file name="filename" type="audio">
+        <comment start_time="1:03" end_time="1:10">
+            <author>Michael</author>
+            <mention>Thomas</mention>
+            <quote>The only thing to fear is fear itself</quote>
+            <intro end_time="1:00"/>
+        </comment>
+    </file>
+    <file name="filename" type="audio">
+        <comment start_time="" end_time="">
+            <author>Michael</author>
+            <mention>Thomas</mention>
+            <quote>The only thing to fear is fear itself</quote>
+            <intro end_time="1:00"/>
+        </comment>
+    </file>
+    <file name="filename" type="audio">
+        <comment start_time="1:03" end_time="1:10">
+            <author>Michael</author>
+            <mention>Thomas</mention>
+            <quote>The only thing to fear is fear itself</quote>
+            <intro end_time="1:00"/>
+        </comment>
+    </file>
+    <file name="filename" type="audio">
+        <comment start_time="1:03" end_time="1:10">
+            <author>Michael</author>
+            <mention>Thomas</mention>
+            <quote>The only thing to fear is fear itself</quote>
+            <intro end_time="1:00"/>
+        </comment>
+    </file>
+</directory>

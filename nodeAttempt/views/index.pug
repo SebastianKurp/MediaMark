@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  .top
+    .icon
+      img(id="wandicon" style="max-height: 75%; max-width: 75%" src= "../images/magic-wand-hand-drawn-tool.svg")
+    .mediamark MediaMark
+    .searchicon
+      img(style="max-height: 25%; max-width: 25%; min-height: 25%; min-width: 25%; margin-top: 30px; margin-right: 10px" src="../images/search.svg")
+    .searchbox
+      .searchbarcontainer
+        input(class="searchinput" type="text" class="searchbar")
+  .maincontent
+    .sidebar
+      .audiovideo
+        .audio
+          a(style="line-height: 50px" href="/audio") Audio
+        .video
+          a(style="line-height: 50px" href="/video") Video
+      .notes
+        .upload
+          input(type="file" id="input" class="choosefile")
+        .note
+    .media
+      audio(id="sound")
+  .clips
+    .wrapper(id="nodelist")
+      //.exampleclip 
+        a(class="myclip" id="testid" href="/clip") Clip
+      //.exampleclip
+        a(class="myclip" href="/clip") Clip
+      //.exampleclip
+        a(class="myclip" href="/clip") Clip
+      //.exampleclip
+        a(class="myclip" href="/clip") Clip
+      //.exampleclip
+        a(class="myclip" href="/clip") Clip
+      //.exampleclip
+        a(class="myclip" href="/clip") Clip
+      //.exampleclip
+        a(class="myclip" href="/clip") Clip
+      //.exampleclip
+        a(class="myclip" href="/clip") Clip
+  .end
+    .github
+      a(style="font-size: 4em" href="https://github.com/mgibbons2/mediamark" target="_blank") Github

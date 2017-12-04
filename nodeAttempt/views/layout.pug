@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+head
+  meta(charset="utf-8")
+  title MediaMark
+  meta(name="description" content="")
+  meta(name="author" content="")
+
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+
+  link(rel="stylesheet" href="../stylesheets/style.css" type="text/css")
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+  script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js', integrity='sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=', crossorigin='anonymous')
+
+  script.
+    $(document).ready(function(){
+      $.ajax({
+        type: "GET",
+        url: "schema.xml",
+        dataType: "xml",
+        success: xmlParser
+      });
+    });
+
+    function xmlParser(xml){
+      $(xml).find("file").each(function(){
+        $("#nodelist").append('<a class="exampleclip" href="idk"> <p class="myclip" href="/clip"> Author: ' + $(this).find("author").text() + '</br></p>' +
+        '<p class="myclip" href="/clip"> Mention: ' + $(this).find("mention").text() + '</br></p>' +
+        '<p class="myclip" href="/clip"> Quote: ' + $(this).find("quote").text() + '</br></p>'+
+        '</p></a>');
+      });
+    }
+  script.
+    $(document).ready(function() {
+      var input = document.getElementById("input");
+      input.onchange = function(){
+      var sound = document.getElementById('sound');
+      var reader = new FileReader();
+      reader.onload = function(e) {
+      sound.src = this.result;
+      sound.controls = true;
+      sound.play();
+      };
+      reader.readAsDataURL(this.files[0]);
+      }
+    });
+body
+  block content

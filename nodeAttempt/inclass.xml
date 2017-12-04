@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="inclass.xsl"?>
+<catalogue>
+    <art>
+        <title>Campbell's Soup Cans</title>
+        <artist>Andy Warhol</artist>
+        <date>1962</date>
+        <value>$5,000,000</value>
+        <origin>United States of America</origin>
+        <movement>Pop Art</movement>
+        <size height="" width=""/>
+    </art>
+    <art>
+        <title>The Fountains</title>
+        <artist>Hubert Robert</artist>
+        <date>1787</date>
+        <value>$1,200,000</value>
+        <origin>France</origin>
+        <movement>Neo-Classical</movement>
+        <size height="" width=""/>
+    </art>
+    <art>
+        <title>Starry Night</title>
+        <artist>Vincent Van Gogh</artist>
+        <date>1889</date>
+        <value>$1,000,000</value>
+        <origin>France</origin>
+        <movement>Post-Impressionism</movement>
+        <size height="" width=""/>
+    </art>
+</catalogue>
