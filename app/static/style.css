@@ -11,7 +11,7 @@
   .maincontent {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 500px;
+    grid-template-rows: 30px;
     border-bottom: 10px solid #777DA7;
     border-right: 10px solid #777DA7;
     border-left: 10px solid #777DA7;
@@ -20,7 +20,7 @@
   .sidebar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 1fr;
     background-color: rgb(175, 183, 236);
     text-align: center;
     border-right: 10px solid #777DA7;
@@ -29,7 +29,7 @@
   .audiovideo{
     grid-column: 1;
     grid-row: 1;
-    background: rgb(74, 70, 79);
+    background: #777DA7;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -42,6 +42,11 @@
     grid-column: 1;
     grid-row: 2;
   }
+  .upload{
+    grid-column: 1;
+    grid-row: 1;
+    line-height: 30px;
+  }
   .notes{
     grid-column: 1;
     grid-row: 2;
@@ -53,7 +58,7 @@
     background-color: rgb(175, 183, 236);
   }
   #sound{
-    height: 100%;
+    height: 30px;
     width: 100%;
   }
   #wandicon{

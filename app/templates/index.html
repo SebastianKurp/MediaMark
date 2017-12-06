@@ -7,11 +7,33 @@
         <div class="exampleclip" >
             <h4>{{ comment.find('title').text }}</h4>
             <p>{{ comment.find('author').text }}</p>
+            <p><span class="start_time">{{ comment.attrib['start_time'] }}</span> {% if comment.attrib['end_time'] %} - {{ comment.attrib['end_time'] }} {% endif %}</p>
         </div>
         {% endfor %}
     </div>
-
-    <a href="/new-comment">Add New Comment</a>
     <a href={{ downloadPath }} download target="blank" >Download Comments</a>
+</div>
+<div>
+    <h2>New Comment Form</h2>
+    <form action="" method="post" name="comment" class="new-comment-form" >
+        {{ form.hidden_tag() }}
+
+        <p>Title: {{ form.title(size=20) }}</p>
+        
+        <p>Author: {{ form.author(size=20) }}</p>
+        
+        <p>Mentions: {{ form.mentions(size=20) }}
+        </p>
+        
+        <p>Quote from clip: {{ form.quote(size=60) }}
+        </p>
+        
+        <p>Comment:</br>
+            {{ form.note(size=100) }}</p>
+        
+        <p>Time: {{ form.time(size=50) }}</p>
+
+        <p><input type="submit" value="Add Comment"/></p>
+    </form>
 </div>
 {% endblock %}

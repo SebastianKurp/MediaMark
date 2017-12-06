@@ -23,7 +23,6 @@
       reader.onload = function(e) {
       sound.src = this.result;
       sound.controls = true;
-      sound.play();
       };
       reader.readAsDataURL(this.files[0]);
       }
@@ -40,16 +39,12 @@
         </div>
         <div class="maincontent">
         <div class="sidebar">
-          <div class="audiovideo">
-            <div class="audio">
               <div class="upload">
-                <input type="file" id="input" class="choosefile">
-            </div>
-            </div>
+                <input type="file" id="input" class="choosefile"/>
             </div>
           </div>
         <div class="media">
-          <audio id="sound">
+          <audio id="sound" ontimeupdate="document.getElementById('time').value = Math.floor(this.currentTime);">
         </div>
         </div>
 

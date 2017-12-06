@@ -10,13 +10,24 @@ root = tree.getroot()
 # comments = root.find('file/comments')
 comments = root.find('comments')
 
-@app.route('/')
-@app.route('/index')
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
 def index():
+    new_comment = CommentForm()
+    if new_comment.validate_on_submit():
+        flash('New comment created by %s' % new_comment.author.data)
+        saveComment(new_comment)
+        xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="\t")
+        with open(os.path.join('app','static', root.attrib['name'] + '.xml'), "w") as f:
+            f.write(xmlstr)
+        print(os.path.join('app', 'static', root.attrib['name'] + '.xml'))
+        tree = ET.parse(os.path.join('app', 'static', root.attrib['name'] + '.xml'))
+        #return redirect('/index')
     return render_template('index.html',
                             title='Home',
                             comments=comments,
                             name=root.attrib['name'],
+                            form=new_comment,
                             downloadPath=os.path.join('download', root.attrib['name'] + '.xml'))
 
 @app.route('/file')
@@ -45,6 +56,7 @@ def newComment():
 
 def saveComment(new_comment):
     comment = ET.SubElement(comments, "comment")
+    comment.set("start_time", new_comment.time.data)
     title = ET.SubElement(comment, "title")
     title.text = new_comment.title.data
     author = ET.SubElement(comment, "author")

@@ -22,6 +22,10 @@ flask
 *.log
 *.gz
 
+*venv/*
+
+*__pycache__/*
+
 
 # Coveralls
 coverage
