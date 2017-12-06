@@ -15,18 +15,22 @@
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
     <script>
-    $(document).ready(function() {
-      var input = document.getElementById("input");
-      input.onchange = function(){
-      var sound = document.getElementById('sound');
-      var reader = new FileReader();
-      reader.onload = function(e) {
-      sound.src = this.result;
-      sound.controls = true;
-      };
-      reader.readAsDataURL(this.files[0]);
-      }
-    });
+        $(document).ready(function () {
+            var input = document.getElementById("input");
+            input.onchange = function () {
+                var sound = document.getElementById('sound');
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    sound.src = this.result;
+                    sound.controls = true;
+                };
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+
+        function changeTime(time) {
+            document.getElementById("sound").currentTime = parseInt(time);
+        }
     </script>
 
 </head>
@@ -44,7 +48,7 @@
             </div>
           </div>
         <div class="media">
-          <audio id="sound" ontimeupdate="document.getElementById('time').value = Math.floor(this.currentTime);">
+          <audio id="sound" src={{ schemaSource }} ontimeupdate="document.getElementById('time').value = Math.floor(this.currentTime);">
         </div>
         </div>
 

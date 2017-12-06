@@ -1,14 +1,14 @@
 <file intro_time="1:00" lenght="5:00" name="test.mp3" type="audio">
     <desc>This is a test file</desc>
     <comments>
-        <comment end_time="" start_time="">
-            <title></title>
-            <author></author>
+        <comment end_time="" start_time="50">
+            <title>title</title>
+            <author>Nieky</author>
             <mentions></mentions>
             <quote></quote>
             <note></note>
         </comment>
-        <comment end_time="" start_time="">
+        <comment end_time="" start_time="20">
             <title></title>
             <author></author>
             <mention></mention>

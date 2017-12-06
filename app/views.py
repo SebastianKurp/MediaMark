@@ -56,7 +56,8 @@ def newComment():
 
 def saveComment(new_comment):
     comment = ET.SubElement(comments, "comment")
-    comment.set("start_time", new_comment.time.data)
+    comment.set("start_time", new_comment.start_time.data)
+    comment.set("end_time", new_comment.end_time.data)
     title = ET.SubElement(comment, "title")
     title.text = new_comment.title.data
     author = ET.SubElement(comment, "author")

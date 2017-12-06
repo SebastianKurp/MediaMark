@@ -3,7 +3,8 @@ from wtforms import StringField, BooleanField, IntegerField
 from wtforms.validators import DataRequired
 
 class CommentForm(Form):
-    time = StringField('time', validators=[DataRequired()])
+    start_time = StringField('start_time', validators=[DataRequired()])
+    end_time = StringField('end_time')
     title = StringField('title', validators=[DataRequired()])
     author = StringField('author', validators=[DataRequired()])
     mentions = StringField('mentions')
