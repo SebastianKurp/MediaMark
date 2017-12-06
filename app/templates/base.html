@@ -14,40 +14,42 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
+    <script>
+    $(document).ready(function() {
+      var input = document.getElementById("input");
+      input.onchange = function(){
+      var sound = document.getElementById('sound');
+      var reader = new FileReader();
+      reader.onload = function(e) {
+      sound.src = this.result;
+      sound.controls = true;
+      sound.play();
+      };
+      reader.readAsDataURL(this.files[0]);
+      }
+    });
+    </script>
+
 </head>
 
 <body>
     
-    <div classs="top">
+    <div class="top">
         <img id="wandicon" style="max-height: 50px; max-width: 50px" src= "../static/img/magic-wand-hand-drawn-tool.svg"/>
         <div class="mediamark">MediaMark</div> 
-        <div class="searchicon">
-          <img style="max-height: 40px; max-width: 40px; min-height: 40px; min-width: 40px; margin-top: 30px; margin-right: 10px" src="../static/img/search.svg"/>
-        </div>
-        <div class="searchbox">
-          <div class="searchbarcontainer"
-            <input class="searchinput searchbar" type="text">
-          </div>
-        </div>
         </div>
         <div class="maincontent">
         <div class="sidebar">
           <div class="audiovideo">
             <div class="audio">
-              <a style="line-height: 50px" href="/audio"> Audio</a>
+              <div class="upload">
+                <input type="file" id="input" class="choosefile">
             </div>
-            <div class="video">
-              <a style="line-height: 50px" href="/video"> Video</a>
             </div>
             </div>
           </div>
-          <div class="notes">
-            <div class="upload">
-              <input type="file" id="input" class="choosefile">
-          </div>
-        </div>
         <div class="media">
-          <audio id="sound" >
+          <audio id="sound">
         </div>
         </div>
 

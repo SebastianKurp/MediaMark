@@ -1,6 +1,6 @@
 .top {
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 8fr;
     grid-template-rows: 75px;
     border-bottom: 10px solid #777DA7;
     grid-auto-rows: 75px 75px;
@@ -98,7 +98,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 200px;
     text-align: center;
-    background-image: url("../img/logo_x_pattern.png");
+    background-image: url("/static/img/logo_x_pattern.png");
     background-repeat: repeat;
   }
   .github {
@@ -166,6 +166,9 @@
   }
   a:hover {
     color: white;
+  }
+  div > a{
+    color: #777DA7;
   }
   @media only screen and (max-width: 500px) {
     .searchicon{

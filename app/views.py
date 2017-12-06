@@ -37,7 +37,7 @@ def newComment():
         xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="\t")
         with open(os.path.join('app','static', root.attrib['name'] + '.xml'), "w") as f:
             f.write(xmlstr)
-        print os.path.join('app', 'static', root.attrib['name'] + '.xml')
+        #print os.path.join('app', 'static', root.attrib['name'] + '.xml')
         tree = ET.parse(os.path.join('app', 'static', root.attrib['name'] + '.xml'))
         return redirect('/index')
     return render_template('comment.html',

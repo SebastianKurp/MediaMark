@@ -2,7 +2,6 @@
 {% block content %}
 <p>Current file: {{ name }}</p>
 <div class="clips">
-    <h3>Comments</h3>
     <div class="wrapper" id="nodelist" >
         {% for comment in comments %}
         <div class="exampleclip" >
@@ -13,6 +12,6 @@
     </div>
 
     <a href="/new-comment">Add New Comment</a>
-    <a href={{ downloadPath }} download target="blank" >download comments</a>
+    <a href={{ downloadPath }} download target="blank" >Download Comments</a>
 </div>
 {% endblock %}
