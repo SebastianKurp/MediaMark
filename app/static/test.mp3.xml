@@ -8,43 +8,43 @@
 	<comments>
 		
         
-		<comment end_time="1:10" start_time="1:03">
+		<comment end_time="" start_time="">
 			
             
-			<title>Michael's first comment</title>
+			<title/>
 			
             
-			<author>Michael</author>
+			<author/>
 			
             
-			<mentions>Thomas</mentions>
+			<mentions/>
 			
             
-			<quote>The only thing to fear is fear itself</quote>
+			<quote/>
 			
             
-			<note>I love this saying</note>
+			<note/>
 			
         
 		</comment>
 		
         
-		<comment end_time="2:30" start_time="2:15">
+		<comment end_time="" start_time="">
 			
             
-			<title>Nieky's first comment</title>
+			<title/>
 			
             
-			<author>Nieky</author>
+			<author/>
 			
             
-			<mention>Sebastian</mention>
+			<mention/>
 			
             
-			<quote>The only thing to fear is fear itself</quote>
+			<quote/>
 			
             
-			<note>me too</note>
+			<note/>
 			
         
 		</comment>
@@ -56,146 +56,6 @@
 			<mentions>nieky</mentions>
 			<quote>quote reference here</quote>
 			<note>testing comment body</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
-		</comment>
-		<comment start_time="5">
-			<title>asdflkjas;dlj</title>
-			<author>adslkfjal;dkj</author>
-			<mentions>L;SFJASDKJF;</mentions>
-			<quote>alsdfkj;alskdj</quote>
-			<note>a;sdlkjfal;skdj</note>
 		</comment>
 		<comment start_time="5">
 			<title>asdflkjas;dlj</title>
