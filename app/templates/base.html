@@ -19,6 +19,8 @@
             var input = document.getElementById("input");
             input.onchange = function () {
                 var sound = document.getElementById('sound');
+                var filename = $('#input').val().replace(/^.*[\\\/]/, '');
+                document.getElementById('filename').innerText = filename;
                 var reader = new FileReader();
                 reader.onload = function (e) {
                     sound.src = this.result;
@@ -31,6 +33,15 @@
         function changeTime(time) {
             document.getElementById("sound").currentTime = parseInt(time);
         }
+
+        $('#submit').click(function () {
+            $.ajax("{{ url_for('index') }}").done(function (reply) {
+                // $.post("/", $('#comment-form').serialize(), function () {
+                //     // alert("success");
+                // });
+                $('#nodelist').html(reply);
+            });
+        });
     </script>
 
 </head>
@@ -48,7 +59,7 @@
             </div>
           </div>
         <div class="media">
-          <audio id="sound" src={{ schemaSource }} ontimeupdate="document.getElementById('time').value = Math.floor(this.currentTime);">
+          <audio id="sound" src="" ontimeupdate="document.getElementById('time').value = Math.floor(this.currentTime);">
         </div>
         </div>
 

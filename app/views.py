@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 from .forms import CommentForm
 from xml.dom import minidom
 
-tree = ET.parse(os.path.join('app','static','schema.xml'))
+tree = ET.parse(os.path.join('app','static','test.mp3.xml'))
 root = tree.getroot()
 # comments = root.find('file/comments')
 comments = root.find('comments')
@@ -26,7 +26,7 @@ def index():
     return render_template('index.html',
                             title='Home',
                             comments=comments,
-                            name=root.attrib['name'],
+                            # name=root.attrib['name'],
                             form=new_comment,
                             downloadPath=os.path.join('download', root.attrib['name'] + '.xml'))
 
@@ -39,20 +39,20 @@ def files():
 def downloadFile(filename):
     return send_from_directory('static', filename)
 
-@app.route('/new-comment', methods=['GET', 'POST'])
-def newComment():
-    new_comment = CommentForm()
-    if new_comment.validate_on_submit():
-        flash('New comment created by %s' % new_comment.author.data)
-        saveComment(new_comment)
-        xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="\t")
-        with open(os.path.join('app','static', root.attrib['name'] + '.xml'), "w") as f:
-            f.write(xmlstr)
-        #print os.path.join('app', 'static', root.attrib['name'] + '.xml')
-        tree = ET.parse(os.path.join('app', 'static', root.attrib['name'] + '.xml'))
-        return redirect('/index')
-    return render_template('comment.html',
-                            form=new_comment)
+# @app.route('/new-comment', methods=['GET', 'POST'])
+# def newComment():
+#     new_comment = CommentForm()
+#     if new_comment.validate_on_submit():
+#         flash('New comment created by %s' % new_comment.author.data)
+#         saveComment(new_comment)
+#         xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="\t")
+#         with open(os.path.join('app','static', root.attrib['name'] + '.xml'), "w") as f:
+#             f.write(xmlstr)
+#         #print os.path.join('app', 'static', root.attrib['name'] + '.xml')
+#         tree = ET.parse(os.path.join('app', 'static', root.attrib['name'] + '.xml'))
+#         return redirect('/index')
+#     return render_template('comment.html',
+#                             form=new_comment)
 
 def saveComment(new_comment):
     comment = ET.SubElement(comments, "comment")
