@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="MediaMark.xsl"?>
+<file intro_time="1:00" lenght="5:00" name="test.mp3" type="audio">
+   
+    
+   <desc>This is a test file</desc>
+   
+    
+   <comments>
+      
+        
+      <comment end_time="1:10" start_time="1:03">
+         
+            
+         <title>Michael's first comment</title>
+         
+            
+         <author>Michael</author>
+         
+            
+         <mentions>Thomas</mentions>
+         
+            
+         <quote>The only thing to fear is fear itself</quote>
+         
+            
+         <note>I love this saying</note>
+         
+        
+      </comment>
+      
+        
+      <comment end_time="2:30" start_time="2:15">
+         
+            
+         <title>Nieky's first comment</title>
+         
+            
+         <author>Nieky</author>
+         
+            
+         <mention>Sebastian</mention>
+         
+            
+         <quote>The only thing to fear is fear itself</quote>
+         
+            
+         <note>me too</note>
+         
+        
+      </comment>
+      
+    
+      <comment>
+         <title>testing title</title>
+         <author>sebastian</author>
+         <mentions>nieky</mentions>
+         <quote>quote reference here</quote>
+         <note>testing comment body</note>
+      </comment>
+      <comment>
+         <title>abstracted out</title>
+         <author>nieky</author>
+         <mentions>seb</mentions>
+         <quote>testing this</quote>
+         <note>comment here</note>
+      </comment>
+      <comment>
+         <title>testing title</title>
+         <author>nasrullah</author>
+         <mentions>nieky</mentions>
+         <quote>hey</quote>
+         <note>commentingggggg</note>
+      </comment>
+   </comments>
+   
+
+</file>
